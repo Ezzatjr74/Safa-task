@@ -3,10 +3,12 @@ $fa-font-path: "webfonts";
 @import "fontawesome/scss/fontawesome.scss";
 @import "fontawesome/scss/solid.scss";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap');
-$maincolor:#b9863b;
+$maincolor:#cb9a51;
 
 body{
     background-color: #eee;
+}
+*{
 }
 .white{
     background-color: white;
@@ -21,18 +23,20 @@ li{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 
     // notfiction list in top bar  
 
     .box-list{
         .topbar-list{
             position: relative;
+            margin: 0;
             .fa-wallet{
                 color: $maincolor;
             }
             li{
                 display: inline-block;
-                padding: 10px;
+                padding: 0 10px;
                 .grey:hover{
                     color: white;
                     background-color: $maincolor;
@@ -197,6 +201,7 @@ nav{
     padding: 5px;
     background-color: $maincolor;
     border: none;
+    color: white;
 }
 .drop{
     display: block;
@@ -205,7 +210,7 @@ nav{
     display: none;
 }
 .checkout{
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: rgba(255, 255, 255, 0.829);
     width: 80%;
     height: 150px;
     display: flex;
@@ -219,12 +224,17 @@ nav{
             width: 170px;
             padding: 10px;
             margin-top: 10px;
+            border: 0;
+            border-radius: 6px;
+
         }
         select{
             margin-top:10px ;
             display: block;
             width: 170px;
             padding: 10px;
+            border: 0;
+            border-radius: 6px;
         }
         label{
             font-size: larger;
@@ -234,6 +244,8 @@ nav{
             padding: 10px 30px;
             border: none;
             border-radius: 10px;
+            margin-top: 35px;
+            color: white;
         }
     }
 
@@ -272,6 +284,23 @@ nav{
     
 }
 
+.laghtshape{
+    margin: 0;
+    color: #0c3b5c;
+    text-transform: uppercase;
+    font-weight:light;
+    letter-spacing: -1px;
+
+}
+.boldshape{
+    margin: 0;
+    color: #0c3b5c;
+    text-transform: uppercase;
+    font-weight:700;
+    letter-spacing: -1px;
+
+}
+
 .filterhead{
     display: flex;
     flex-direction: row;
@@ -290,7 +319,11 @@ nav{
 }
 .left-title{
     display: inline-block;
-    color: black;
+    margin: 0;
+    color: #0c3b5c;
+    text-transform: capitalize;    
+    letter-spacing: -1px;
+    font-weight: light;
 }
 .right-icon{
     float: right;
@@ -310,7 +343,7 @@ nav{
     
     .labelprog{
         display: inline-block;
-        background-color: orangered;
+        background-color: $maincolor;
         float: left;
         color: white;
     }
@@ -337,7 +370,11 @@ nav{
 .hotel{
     background-color: white;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 86px;
+    .hotel-title{
+        color: #0c3b5c;
+        letter-spacing: -1px;
+    }
     
     .detils{
         display: inline-block;
@@ -366,7 +403,6 @@ nav{
 }
 .dropdown-suggest{
     position: absolute;
-    top: 0;
     top: 10px;
     left: 306px;
 

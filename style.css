@@ -19023,20 +19023,22 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 .topbar .box-list .topbar-list {
   position: relative;
+  margin: 0;
 }
 .topbar .box-list .topbar-list .fa-wallet {
-  color: #b9863b;
+  color: #cb9a51;
 }
 .topbar .box-list .topbar-list li {
   display: inline-block;
-  padding: 10px;
+  padding: 0 10px;
 }
 .topbar .box-list .topbar-list li .grey:hover {
   color: white;
-  background-color: #b9863b;
+  background-color: #cb9a51;
 }
 .topbar .box-list .topbar-list li i {
   font-size: x-large;
@@ -19071,7 +19073,7 @@ li {
   display: inline-block;
 }
 .wallet-dropdown li .wallet-info span {
-  color: #b9863b;
+  color: #cb9a51;
   font-family: sans-serif;
 }
 .wallet-dropdown li .wallet-info h6, .wallet-dropdown li .wallet-info .h6 {
@@ -19079,14 +19081,14 @@ li {
 }
 
 .last-item {
-  border: 1px solid #b9863b;
+  border: 1px solid #cb9a51;
   text-align: center;
-  color: #b9863b;
+  color: #cb9a51;
 }
 
 .last-item:hover {
   color: white;
-  background-color: #b9863b;
+  background-color: #cb9a51;
 }
 
 .notify-dropdown {
@@ -19095,7 +19097,7 @@ li {
   position: absolute;
   top: 85px;
   left: 0;
-  border-left: solid 3px #b9863b;
+  border-left: solid 3px #cb9a51;
   padding: 0;
 }
 .notify-dropdown h6, .notify-dropdown .h6 {
@@ -19168,8 +19170,9 @@ nav .toggelmine {
 
 .closemine {
   padding: 5px;
-  background-color: #b9863b;
+  background-color: #cb9a51;
   border: none;
+  color: white;
 }
 
 .drop {
@@ -19181,7 +19184,7 @@ nav .toggelmine {
 }
 
 .checkout {
-  background-color: rgba(255, 255, 255, 0.719);
+  background-color: rgba(255, 255, 255, 0.829);
   width: 80%;
   height: 150px;
   display: flex;
@@ -19197,21 +19200,27 @@ nav .toggelmine {
   width: 170px;
   padding: 10px;
   margin-top: 10px;
+  border: 0;
+  border-radius: 6px;
 }
 .checkout .box select {
   margin-top: 10px;
   display: block;
   width: 170px;
   padding: 10px;
+  border: 0;
+  border-radius: 6px;
 }
 .checkout .box label {
   font-size: larger;
 }
 .checkout .box .search {
-  background-color: #b9863b;
+  background-color: #cb9a51;
   padding: 10px 30px;
   border: none;
   border-radius: 10px;
+  margin-top: 35px;
+  color: white;
 }
 
 .big-servies {
@@ -19244,11 +19253,27 @@ nav .toggelmine {
   font-size: xx-large;
 }
 
+.laghtshape {
+  margin: 0;
+  color: #0c3b5c;
+  text-transform: uppercase;
+  font-weight: light;
+  letter-spacing: -1px;
+}
+
+.boldshape {
+  margin: 0;
+  color: #0c3b5c;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
 .filterhead {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-left: 4px solid #b9863b;
+  border-left: 4px solid #cb9a51;
   padding: 0 10px;
   margin-bottom: 20px;
 }
@@ -19262,7 +19287,11 @@ nav .toggelmine {
 
 .left-title {
   display: inline-block;
-  color: black;
+  margin: 0;
+  color: #0c3b5c;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-weight: light;
 }
 
 .right-icon {
@@ -19283,7 +19312,7 @@ nav .toggelmine {
 }
 .custombox .labelprog {
   display: inline-block;
-  background-color: orangered;
+  background-color: #cb9a51;
   float: left;
   color: white;
 }
@@ -19308,7 +19337,11 @@ nav .toggelmine {
 .hotel {
   background-color: white;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 86px;
+}
+.hotel .hotel-title {
+  color: #0c3b5c;
+  letter-spacing: -1px;
 }
 .hotel .detils {
   display: inline-block;
@@ -19327,7 +19360,7 @@ nav .toggelmine {
 }
 .suggest i {
   font-size: xx-large;
-  color: #b9863b;
+  color: #cb9a51;
   padding: 0 13px;
 }
 
@@ -19337,7 +19370,6 @@ nav .toggelmine {
 
 .dropdown-suggest {
   position: absolute;
-  top: 0;
   top: 10px;
   left: 306px;
 }
