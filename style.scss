@@ -1,0 +1,379 @@
+$fa-font-path: "webfonts";
+@import "bootstrap-5.2.1/scss/bootstrap";
+@import "fontawesome/scss/fontawesome.scss";
+@import "fontawesome/scss/solid.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap');
+$maincolor:#b9863b;
+
+body{
+    background-color: #eee;
+}
+.white{
+    background-color: white;
+}
+li{
+    list-style: none;
+}
+// top bar list style 
+.topbar{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // notfiction list in top bar  
+
+    .box-list{
+        .topbar-list{
+            position: relative;
+            .fa-wallet{
+                color: $maincolor;
+            }
+            li{
+                display: inline-block;
+                padding: 10px;
+                .grey:hover{
+                    color: white;
+                    background-color: $maincolor;
+                }
+                i{
+                    font-size: x-large;
+                }
+                .grey{
+                    border-radius:50%;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 40px;
+                    height: 40px;
+
+                    background-color: rgb(177, 171, 171);
+                }
+            }
+        }
+    }
+}
+
+// dropdown style start
+.wallet-dropdown{
+    z-index: 4;
+    display: none;
+    position: absolute;
+    top:85px;
+    left: 0;
+    
+    li{
+        padding: 10px;
+        width: 250px;
+        background-color: white;
+        border-bottom: 1px solid #eee;
+        i{
+            padding: 5px;
+            font-size: x-large;
+        }
+        .wallet-info{
+            display: inline-block;
+
+            span{
+                color: $maincolor;
+                font-family: sans-serif;
+            }
+            h6{
+                font-weight: bold;
+            }
+        }
+    }
+}
+.last-item{
+    border: 1px solid $maincolor;
+    text-align: center;
+    color: $maincolor;
+}
+.last-item:hover{
+    color: white;
+    background-color: $maincolor;
+}
+// dropdown style end
+
+
+// show dropdown wallte
+
+
+// start style for notify-dropdown
+
+.notify-dropdown{
+    z-index: 4;
+    display: none;
+    position: absolute;
+    top:85px;
+    left: 0;
+    border-left:solid 3px $maincolor;
+    padding: 0;
+    h6{
+        display: inline-block;
+        color: black;
+    }
+    span{
+        float: right;
+        font-size: small;
+    }
+    p{
+        font-size: small;
+    }
+    li{
+        padding: 5px;
+        width: 350px;
+        background-color:#fbf8f3;
+        color:grey;
+        border-bottom: 1px solid #eee;
+    }
+
+}
+
+
+
+// end style for notify-dropdown
+
+// start style for langue-dropdown
+
+.fa-flag-usa{
+    position: relative;
+
+}
+.langue-dropdown{
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 85px;
+    li{
+        background-color:white;
+    }
+}
+
+
+// end style for langue-dropdown
+
+.ourprofile{
+    position: relative;
+}
+.profile-dropdown{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 85px;
+    right: 10px;
+
+    li{
+        background-color: white;
+        border-bottom: #eee;
+        color:gray;
+        width: 177px;
+    }
+
+}
+
+
+
+
+nav{
+    height: 220px;
+    background-image: url('img-safa/0955d2ec19b1b5c2f5f688db6f78d6f3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .toggelmine{
+        color: white;
+        
+    }
+    
+}
+.closemine{
+    padding: 5px;
+    background-color: $maincolor;
+    border: none;
+}
+.drop{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.checkout{
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .box{
+        display: inline-block;
+        input{
+            display: block;
+            width: 170px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        select{
+            margin-top:10px ;
+            display: block;
+            width: 170px;
+            padding: 10px;
+        }
+        label{
+            font-size: larger;
+        }
+        .search{
+            background-color: $maincolor;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+}
+.big-servies{
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 100px;
+}
+
+.servies{
+   
+    background-color: rgba(255, 255, 255, 0.616);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    width: 80vw;
+    height: 100vh;
+    .serviec{
+        z-index: 6;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        background-color: white;
+        display: grid;
+        justify-content:center ;
+        align-content: space-around;
+        border-radius: 10px;
+
+        i{
+            font-size: xx-large;
+        }
+
+    }
+    
+}
+
+.filterhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-left: 4px solid $maincolor;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    button{
+        padding: 0 10px;
+        background-color: white;
+        font-size: small;
+        border: 1px solid gray;
+        border-radius: 10px;
+
+    }
+}
+.left-title{
+    display: inline-block;
+    color: black;
+}
+.right-icon{
+    float: right;
+    color: gray;
+}
+.custombox{
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    
+    background-color: white;
+    .search{
+        display: block;
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+    }
+    
+    .labelprog{
+        display: inline-block;
+        background-color: orangered;
+        float: left;
+        color: white;
+    }
+    .lebelright{
+        float: right;
+        background-color: #eee;
+        color: gray;
+
+    }
+    progress{
+        width: 90%;
+        margin: auto;
+    }
+
+    
+
+}
+.gold{
+    color: gold;
+}
+.empty{
+    color: #eee;
+}
+.hotel{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 50px;
+    
+    .detils{
+        display: inline-block;
+        position: relative;
+
+        
+    }
+}
+.suggest{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    width:300px ;
+    height: 80px;
+    i{
+        font-size: xx-large;
+        color: $maincolor;
+        padding: 0 13px;
+    }
+}
+.catch{
+    position: relative;
+}
+.dropdown-suggest{
+    position: absolute;
+    top: 0;
+    top: 10px;
+    left: 306px;
+
+}
+.drop{
+    display: block;
+}
+.hide{
+    display: none;
+}
