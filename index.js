@@ -29,5 +29,26 @@ $('#closemine').hover(
     }
 )
 
+$('#allFacilites').click(
+    function(){
+        var all = $('#allFacilites');
+        var chid = $('.Facilites');
+
+        chid.prop('checked',true) 
+})
+
+$('#allMeal').click(
+    function(){
+
+        $('.meal').prop('checked',true) 
+})
+
+$('#alltype').click(
+    function(){
+        $('.types').prop('checked',true) 
+})
+
+
+
 
 
