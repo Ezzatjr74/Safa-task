@@ -19007,6 +19007,7 @@ readers do not read off random characters that represent icons */
 
 body {
   background-color: #eee;
+  overflow-x: hidden;
 }
 
 .white {
@@ -19337,7 +19338,7 @@ nav .toggelmine {
 .hotel {
   background-color: white;
   padding: 10px;
-  margin-bottom: 86px;
+  margin-bottom: 88px;
 }
 .hotel .hotel-title {
   color: #0c3b5c;
@@ -19371,7 +19372,7 @@ nav .toggelmine {
 .dropdown-suggest {
   position: absolute;
   top: 10px;
-  left: 306px;
+  left: 187px;
 }
 
 .drop {

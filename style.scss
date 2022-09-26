@@ -7,6 +7,8 @@ $maincolor:#cb9a51;
 
 body{
     background-color: #eee;
+    overflow-x: hidden;
+
 }
 *{
 }
@@ -370,7 +372,7 @@ nav{
 .hotel{
     background-color: white;
     padding: 10px;
-    margin-bottom: 86px;
+    margin-bottom: 88px;
     .hotel-title{
         color: #0c3b5c;
         letter-spacing: -1px;
@@ -404,7 +406,7 @@ nav{
 .dropdown-suggest{
     position: absolute;
     top: 10px;
-    left: 306px;
+    left:187px;
 
 }
 .drop{
