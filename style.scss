@@ -6,413 +6,88 @@ $fa-font-path: "webfonts";
 $maincolor:#cb9a51;
 
 body{
-    background-color: #eee;
     overflow-x: hidden;
-
 }
-
 *{
-}
-.white{
-    background-color: white;
-}
-li{
-    list-style: none;
-}
-// top bar list style 
-.topbar{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-
-    // notfiction list in top bar  
-
-    .box-list{
-        .topbar-list{
-            position: relative;
-            margin: 0;
-            .fa-wallet{
-                color: $maincolor;
-            }
-            li{
-                display: inline-block;
-                padding: 0 10px;
-                .grey:hover{
-                    color: white;
-                    background-color: $maincolor;
-                }
-                i{
-                    font-size: x-large;
-                }
-                .grey{
-                    border-radius:50%;
-                    line-height: 40px;
-                    text-align: center;
-                    width: 40px;
-                    height: 40px;
-
-                    background-color: rgb(177, 171, 171);
-                }
-            }
-        }
-    }
-}
-
-// dropdown style start
-.wallet-dropdown{
-    z-index: 4;
-    display: none;
-    position: absolute;
-    top:85px;
-    left: 0;
-    
-    li{
-        padding: 10px;
-        width: 250px;
-        background-color: white;
-        border-bottom: 1px solid #eee;
-        i{
-            padding: 5px;
-            font-size: x-large;
-        }
-        .wallet-info{
-            display: inline-block;
-
-            span{
-                color: $maincolor;
-                font-family: sans-serif;
-            }
-            h6{
-                font-weight: bold;
-            }
-        }
-    }
-}
-.last-item{
-    border: 1px solid $maincolor;
-    text-align: center;
-    color: $maincolor;
-}
-.last-item:hover{
-    color: white;
-    background-color: $maincolor;
-}
-// dropdown style end
-
-
-// show dropdown wallte
-
-
-// start style for notify-dropdown
-
-.notify-dropdown{
-    z-index: 4;
-    display: none;
-    position: absolute;
-    top:85px;
-    left: 0;
-    border-left:solid 3px $maincolor;
-    padding: 0;
-    h6{
-        display: inline-block;
-        color: black;
-    }
-    span{
-        float: right;
-        font-size: small;
-    }
-    p{
-        font-size: small;
-    }
-    li{
-        padding: 5px;
-        width: 350px;
-        background-color:#fbf8f3;
-        color:grey;
-        border-bottom: 1px solid #eee;
-    }
-
-}
-
-
-
-// end style for notify-dropdown
-
-// start style for langue-dropdown
-
-.fa-flag-usa{
-    position: relative;
-
-}
-.langue-dropdown{
-    display: none;
-    z-index: 3;
-    position: absolute;
-    top: 85px;
-    li{
-        background-color:white;
-    }
-}
-
-
-// end style for langue-dropdown
-
-.ourprofile{
-    position: relative;
-}
-.profile-dropdown{
-    z-index: 2;
-    display: none;
-    position: absolute;
-    top: 85px;
-    right: 10px;
-
-    li{
-        background-color: white;
-        border-bottom: #eee;
-        color:gray;
-        width: 177px;
-    }
-
-}
-
-
-
-
-nav{
-    height: 220px;
-    background-image: url('img-safa/0955d2ec19b1b5c2f5f688db6f78d6f3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    .toggelmine{
-        color: white;
-        
-    }
+    margin: 0;
     
 }
-.closemine{
-    padding: 5px;
-    background-color: $maincolor;
-    border: none;
-    color: white;
+
+.th-trip-mang{
+    color: #112E53;
+    height: 60px;
 }
-.drop{
+.green-date{
+    color: rgb(28, 212, 28);
     display: block;
 }
-.hide{
-    display: none;
+.red-date{
+    color: red;
+    display: block;
 }
-.checkout{
-    background-color: rgba(255, 255, 255, 0.829);
-    width: 80%;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    .box{
-        display: inline-block;
-        input{
-            display: block;
-            width: 170px;
-            padding: 10px;
-            margin-top: 10px;
-            border: 0;
-            border-radius: 6px;
-
-        }
-        select{
-            margin-top:10px ;
-            display: block;
-            width: 170px;
-            padding: 10px;
-            border: 0;
-            border-radius: 6px;
-        }
-        label{
-            font-size: larger;
-        }
-        .search{
-            background-color: $maincolor;
-            padding: 10px 30px;
-            border: none;
-            border-radius: 10px;
-            margin-top: 35px;
-            color: white;
-        }
-    }
-
+.unpub{
+    color: white;
+    padding: 1px;
+    background-color:#ce7c0d;
+    border-radius: 5px;
 }
-.big-servies{
-    display: none;
-    z-index: 5;
-    position: absolute;
-    top: 100px;
+.fa-plane-up{
+    transform: rotate(45deg);
 }
-
-.servies{
-   
-    background-color: rgba(255, 255, 255, 0.616);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    width: 80vw;
-    height: 100vh;
-    .serviec{
-        z-index: 6;
-        height: 200px;
-        width: 200px;
-        text-align: center;
-        background-color: white;
-        display: grid;
-        justify-content:center ;
-        align-content: space-around;
-        border-radius: 10px;
-
-        i{
-            font-size: xx-large;
-        }
-
-    }
+.fa-check{
+    color: rgb(30, 212, 30);
+}
+.fa-trash-can{
+    color: red;
+    text-align: right;
+}
+.edit-product{
+    margin-right: 20px;
+    color: #cb9a51;
+}
+.add-price{
+    color: red;
+    text-decoration: underline;
     
 }
-
-.laghtshape{
-    margin: 0;
-    color: #0c3b5c;
-    text-transform: uppercase;
-    font-weight:light;
-    letter-spacing: -1px;
-
+.tb-trip-mangment{
+    border: 1px solid #eee;
+    padding: 0px 10px;
 }
-.boldshape{
-    margin: 0;
-    color: #0c3b5c;
-    text-transform: uppercase;
-    font-weight:700;
-    letter-spacing: -1px;
-
+.created-date{
+    margin-right: 40px;
 }
-
-.filterhead{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-left: 4px solid $maincolor;
-    padding: 0 10px;
-    margin-bottom: 20px;
-    button{
-        padding: 0 10px;
-        background-color: white;
-        font-size: small;
-        border: 1px solid gray;
-        border-radius: 10px;
-
-    }
+.pegntion-trip:hover{
+    color: white;
+    background-color: #112E53;
+    
 }
-.left-title{
+.pegntion-trip{
     display: inline-block;
-    margin: 0;
-    color: #0c3b5c;
-    text-transform: capitalize;    
-    letter-spacing: -1px;
-    font-weight: light;
+    padding: 0px 5px;
+    
 }
-.right-icon{
-    float: right;
-    color: gray;
+.previos-page{
+    transform: rotate(180deg);
 }
-.custombox{
-    padding: 20px 15px;
-    margin-bottom: 20px;
-    
-    background-color: white;
-    .search{
-        display: block;
-        margin: auto;
-        width: 80%;
-        padding: 5px;
-    }
-    
-    .labelprog{
-        display: inline-block;
-        background-color: $maincolor;
-        float: left;
-        color: white;
-    }
-    .lebelright{
-        float: right;
-        background-color: #eee;
-        color: gray;
-
-    }
-    progress{
-        width: 90%;
-        margin: auto;
-    }
-
-    
+.page-list{
+    text-align: right;
 
 }
-.gold{
-    color: gold;
-}
-.empty{
-    color: #eee;
-}
-.hotel{
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 88px;
-    .hotel-title{
-        color: #0c3b5c;
-        letter-spacing: -1px;
-    }
-    
-    .detils{
-        display: inline-block;
-        position: relative;
-
-        
-    }
-}
-.suggest{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid gray;
-    width:300px ;
-    height: 80px;
+.trip-proudcts{
     i{
-        font-size: xx-large;
-        color: $maincolor;
-        padding: 0 13px;
+        padding: 2px;
     }
-}
-.catch{
-    position: relative;
-}
-.dropdown-suggest{
-    position: absolute;
-    top: 10px;
-    left:187px;
 
 }
-.drop{
-    display: block;
+.up-down{
+    display: inline;
 }
-.hide{
-    display: none;
+
+.up{
+    display: block;
+    transform: rotate(90deg);
+   
+}
+.down{
 }
